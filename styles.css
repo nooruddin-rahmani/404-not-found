@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  min-height: 949px;
+}
+body {
+  height: 100vh;
+}
+
+header > nav {
+  margin: 3vw;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+  text-align: left;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.image {
+  margin-top: 300px;
+  width: 650px;
+  height: 520px;
+  background: url("./Scarecrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.content {
+  margin-top: 300px;
+  width: 630px;
+}
+.content > h1 {
+  font-family: "Space Mono", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  height: 190px;
+  width: 650px;
+  margin-bottom: 36px;
+}
+.content > p {
+  height: 108px;
+  width: 381px;
+  border-radius: nullpx;
+  font-family: Space Mono;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  text-align: left;
+  margin-bottom: 64px;
+}
+.content > button {
+  height: 68px;
+  width: 216px;
+  border-radius: 0px;
+  background-color: #333333;
+  color: white;
+  font-family: "Space Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+}
+footer > span {
+  display: flex;
+  padding-top: 100px;
+  justify-content: center;
+  color: #bdbdbd;
+  font-family: "Montserrat", sans-serif;
+}
+footer > span > a {
+  color: #bdbdbd;
+}
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .image {
+    width: 370px;
+    height: 310px;
+    margin-top: 40px;
+  }
+  .content {
+    margin-top: 50px;
+    padding-left: 10px;
+  }
+  .content > h1 {
+    width: 375px;
+    text-align: left;
+    font-size: 48px;
+  }
+  .content > button {
+    font-size: 14px;
+  }
+  .content > p {
+    font-size: 18px;
+    width: 300px;
+  }
+  footer > span {
+    padding-top: 20px;
+  }
+}

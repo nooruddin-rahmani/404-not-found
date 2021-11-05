@@ -15,26 +15,45 @@
       type="image/x-icon"
       href="https://devchallenges.io/"
     />
+    <link rel="stylesheet" href="./tailwind.min.css" />
     <link rel="stylesheet" href="./styles.css" />
-
     <title>Devchallenges</title>
   </head>
   <body>
     <header>
-      <nav>404 NOT FOUND</nav>
+      <nav class="font-bold text-2xl pt-2 pl-2 lg:pt-10 lg:pl-16">
+        404 NOT FOUND
+      </nav>
     </header>
-    <div class="container">
-      <div class="image"><img src="./Scarecrow.png" alt="" /></div>
-      <div class="content">
-        <h1>I have bad news for you</h1>
-        <p>
+    <div class="lg:flex lg:flex-row lg:pt-48">
+      <div class="flex justify-center mt-16 lg:ml-10 lg:w-1/2 lg:h-2/3">
+        <img src="./Scarecrow.png" alt="" class="w-72 lg:w-full" />
+      </div>
+      <div class="ml-4 mt-16">
+        <h1 class="text-5xl font-bold leading-normal lg:text-6xl lg:mr-28">
+          I have bad news for you
+        </h1>
+        <p
+          class="
+            mt-8
+            w-80
+            font-normal
+            leading-relaxed
+            text-lg
+            lg:w-96 lg:text-2xl
+          "
+        >
           The page you are looking for might be removed or is temporarily
           unavailable
         </p>
-        <button>Back to homepage</button>
+        <button class="px-11 py-6 text-white mt-16 text-sm font-bold">
+          Back to homepage
+        </button>
       </div>
     </div>
-    <footer>
+    <footer
+      class="flex flex-row text-xs justify-center pt-4 mt-28 text-gray-400"
+    >
       <span
         >created by
         <a href="https://github.com/nooruddin-rahmani-100">Nooruddin</a> -

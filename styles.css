@@ -6,6 +6,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  width: fit-content;
 }
 .image img {
   width: 375px;
@@ -22,9 +23,7 @@ header > nav {
   line-height: 25px;
   text-align: left;
 }
-.content {
-  margin: 10px;
-}
+
 .content > h1 {
   font-family: "Space Mono", sans-serif;
   font-size: 64px;
@@ -71,3 +70,16 @@ footer > span {
 footer > span > a {
   color: #bdbdbd;
 }
+@media (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .image {
+    width: 55%;
+  }
+  .image img {
+    width: 100%;
+  }
+} ;

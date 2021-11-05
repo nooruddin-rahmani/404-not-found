@@ -1,0 +1,9 @@
+body {
+  font-family: "Space Mono", sans-serif;
+}
+header > nav {
+  font-family: "Inconsolata", sans-serif;
+}
+button {
+  background: #333333;
+}
